@@ -1,1 +1,4 @@
 /* Tipografia, elementos HTML */
+body{
+    font-family:  var(--fonte-principal);
+}
