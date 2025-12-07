@@ -4,14 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce SyntaxWear</title>
+    <title>SyntaxWear - ténis e SneaKers Oline</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/components/base.css">
+
 </head>
 
 <body>
-    <header>
-        <!-- Logo e Navegação -->
+    <header class="header">
+        <!-- logo de navegação -->
+        <h1 class="logo">
+            <a href="/" title="SyntaxWear - ténis e SneaKers Oline">
+                <img src="./imagens/logo.svg" alt="SyntaxWear - ténis e SneaKers Oline" />
+            </a>
+        </h1>
+        <nav class="nav-center" aria-label="categorias Principais">
+            <ul>
+                <li><a href="#">Maculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-right">
+            <ul>
+                <li><a href="#">Nossas Lojas</a></li>
+                <li><a href="#">Sobre</a></li>
+
+                <li><a href="#" title="Pesquisar"><img src="./icons/pesquisa.svg" alt="Pesquisar"></a></li>
+
+
+                <li><a href="#" title="Entrar"><img src="./icons/user.svg" alt="Entrar"></a></li>
+                <li><a href="#" title="Carrinho"><img src="./icons/carrinho.svg" alt="Carrinho"></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -32,4 +59,5 @@
         <!-- Informações de Contato e Links -->
     </footer>
 </body>
+
 </html>

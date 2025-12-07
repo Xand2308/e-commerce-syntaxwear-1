@@ -1,5 +1,6 @@
 @import url('./settings.css');
 @import url('./base.css');
 @import url('./layout.css');
-/* @import url('./components/'); */
+@import url('./components/nav-center.css');
+@import url('./components/nav-right.css');
 @import url('./utilities.css');

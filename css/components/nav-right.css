@@ -1,0 +1,9 @@
+.nav-right ul {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right ul li a img{
+    width: 10px;
+    height: 10px;
+}
