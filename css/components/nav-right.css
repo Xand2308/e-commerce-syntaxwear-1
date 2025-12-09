@@ -3,6 +3,12 @@
     gap: 10px;
 }
 
+.nav-right ul li a {
+    background-color: transparent;
+    border: none;
+    padding: 0; /* Adicionado para remover qualquer preenchimento que possa fazer parecer um botão */
+}
+
 .nav-right ul li a img{
     width: 10px;
     height: 10px;
