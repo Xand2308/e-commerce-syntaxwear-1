@@ -1,0 +1,104 @@
+.highLight{
+    grid-area: highLight;
+    background-image: url(../../imagens/products/grid-original.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat
+    position: relative;
+    border-radius: 20px;
+    oveerflow: hidden;
+}
+
+.sneaker-purple{
+    grid-area: sneaker-purple;
+    background-image: url(../../imagens/products/roxo-\ verde-grid.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.model{
+    grid-area: model;
+    background-image: url(../../imagens/products/modelo-feminino.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sneaker-color{
+    grid-area: sneaker-color;
+    background-image: url(../../imagens/products/colorido.png);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sneaker-white{
+    grid-area: sneaker-white;
+    background-image: url(../../imagens/products/futurista-grid.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sneaker-silver{
+    grid-area: sneaker-silver;
+    background-image: url(../../imagens/products/preto-azul-grid.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+        "highLight highLight sneaker-purple sneaker-purple"
+        "highLight highLight model sneaker-color" 
+        "sneaker-white sneaker-white model sneaker-silver";
+    gap: 30px;
+}
+
+.top-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-title{
+    color: #EDEDED;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 10px;
+}   
+
+.card-subtitle{
+    color: #EDEDED;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.cta-group{
+    display: flex;
+    gap: 10px;
+}
