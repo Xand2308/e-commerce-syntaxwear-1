@@ -1,12 +1,12 @@
 .highLight{
     grid-area: highLight;
     background-image: url(../../imagens/products/grid-original.jpg);
-    background-position: 50% 30%;
+    background-position: 20% 10%;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
     position: relative;
-    border-radius: 20px;
-    oveerflow: hidden;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .sneaker-purple{
@@ -44,8 +44,8 @@
 
 .sneaker-white{
     grid-area: sneaker-white;
-    background-image: url(../../imagens/products/futurista-grid.jpg);
-    background-position: 50% 30%;
+    background-image: url(../../imagens/products/preto-azul-grid.jpg);
+    background-position: 3% 30%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -55,7 +55,7 @@
 
 .sneaker-silver{
     grid-area: sneaker-silver;
-    background-image: url(../../imagens/products/preto-azul-grid.jpg);
+    background-image: url(../../imagens/products/moderno.jpg);
     background-position: 50% 30%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,21 +84,26 @@
 }
 
 .card-title{
-    color: #EDEDED;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 36px;
-    margin-bottom: 10px;
+    color: blue;
+    font-size: 1.90rem;
+    font-weight: 100;
+    line-height: 8px;
+    margin-bottom: 30px;
 }   
 
-.card-subtitle{
-    color: #EDEDED;
-    font-size: 1.5rem;
+.Card-subtitle{
+    color: #ffffff;
+    font-size: 1.7rem;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 400px;
 }
 
 .cta-group{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    justify-content: center;
 }

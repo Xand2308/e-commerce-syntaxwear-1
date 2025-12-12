@@ -1,15 +1,18 @@
 .nav-right ul {
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 .nav-right ul li a {
     background-color: transparent;
     border: none;
-    padding: 0; /* Adicionado para remover qualquer preenchimento que possa fazer parecer um botão */
+    border-radius: 50%;
+    padding: 10; 
+    
+    /* Adicionado para remover qualquer preenchimento que possa fazer parecer um botão */
 }
 
 .nav-right ul li a img{
-    width: 10px;
-    height: 10px;
+    width: 60px;
+    height: 60px;
 }

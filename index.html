@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxWear - ténis e SneaKers Oline</title>
+    <title>SyntaxWear - ténis e SneaKers Online</title>
     <meta name="description"
         content="Compre os melhores tênis e sneakers online na SyntaxWear. Encontre estilos exclusivos, conforto e qualidade para todas as ocasiões." />
 
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/components/hero.css" />
     <link rel="stylesheet" href="./css/components/product-category.css" />
     <link rel="stylesheet" href="./css/components/product-grid.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
 
 </head>
 
@@ -22,13 +23,13 @@
     <header class="header">
         <!-- logo de navegação -->
         <h1 class="logo">
-            <a href="/" title="SyntaxWear - ténis e SneaKers Oline">
-                <img src="./imagens/logo.svg" alt="SyntaxWear - ténis e SneaKers Oline" />
+            <a href="/" title="SyntaxWear - ténis e SneaKers Online">
+                <img src="./imagens/logo.svg" alt="SyntaxWear - ténis e SneaKers Online" />
             </a>
         </h1>
         <nav class="nav-center" aria-label="categorias Principais">
             <ul>
-                <li><a href="#">Maculino</a></li>
+                <li><a href="#">Masculino</a></li>
                 <li><a href="#">Feminino</a></li>
                 <li><a href="#">Outlet</a></li>
             </ul>
@@ -92,13 +93,13 @@
         <section class="grid-section">
             <!-- Grid com Produtos em Destaque -->
             <div class="Card highLight">
-                <div class="top1-content">
+                <div class="top-content">
                     <h3 class="card-title">Krypton One</h3>
                     <p class="Card-subtitle">Estilo Urbano com Atitude </p>
-                    <div class="cta-group">
-                        <a href="#" class="btn btn-outline">Feminino</a>
-                        <a href="#" class="btn btn-outline">Masculino</a>
-                    </div>
+                </div>
+                <div class="cta-group">
+                    <a href="#" class="btn btn-outline">Feminino</a>
+                    <a href="#" class="btn btn-outline">Masculino</a>
                 </div>
             </div>
             <div class="Card sneaker-purple"></div>
@@ -108,9 +109,80 @@
             <div class="Card sneaker-silver"></div>
         </section>
     </main>
+    <!-- Informações de Contato e Links -->
+    <footer class="site-footer">
+        <div class="footer-content">
 
-    <footer>
-        <!-- Informações de Contato e Links -->
+            <div class="footer-right">
+            <form class="newsletter-form">
+                <label for="newsletter-Email">Inscreva-se em nosso email:</label>
+                <input type="email" id="newsletter-Email" placeholder="seuemail@exemplo.com" />
+            </form>
+            <div class="footer-social">
+                <span>Redes Sociais</span>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" title="Instagram"><img src="./icons/instagram.svg"
+                                alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" title="Facebook"><img src="./icons/facebook.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" title="Twitter"><img src="./icons/twitter.svg" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" title="WhatsApp"><img src="./icons/whatsapp.svg" alt="WhatsApp"></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+                                    <nav class="footer-nav">
+                                        <ul>
+                                            <li>
+                                                <strong>Masculino</strong>
+                                                <ul>
+                                                    <li><a href="#">Casual</a></li>
+                                                    <li><a href="#">Esporte</a></li>
+                                                    <li><a href="#">Moderno</a></li>
+                                                    <li><a href="#">Futurista</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Feminino</strong>
+                                                <ul>
+                                                    <li><a href="#">Casual</a></li>
+                                                    <li><a href="#">Esporte</a></li>
+                                                    <li><a href="#">Moderno</a></li>
+                                                    <li><a href="#">Futurista</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Outlet</strong>
+                                                <ul>
+                                                    <li><a href="#">Masculino</a></li>
+                                                    <li><a href="#">Feminino</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Nossas Lojas</strong>
+                                                <ul>
+                                                    <li><a href="#">Loja Fisica</a></li>
+                                                    <li><a href="#">Loja Online</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Sobre</strong>
+                                                <ul>
+                                                    <li><a href="#">Quem Somos</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>        </div>
+        <hr>
+        <div class="footer-copy">
+            Copyright. All Rights Reserved - SyntaxWear 2024
+        </div>
     </footer>
 </body>
 
