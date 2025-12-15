@@ -63,9 +63,9 @@
 }   
 
 .menu-icon {
-    width: 30px;
-    height: 330px;
     display: none;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     z-index: 1001;
 }
@@ -131,5 +131,7 @@
         right: 0;
     }
 
-
+    .menu-icon {
+        display: block;
+    }
 }
