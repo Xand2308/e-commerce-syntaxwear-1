@@ -1,165 +1,58 @@
-/* 
-  ==============================================
-  Arquivo de Responsividade - SyntaxWear
-  ==============================================
-  Este arquivo contém todos os estilos e media queries 
-  necessários para adaptar o site a diferentes 
-  tamanhos de tela (tablets, celulares, etc.).
-  As alterações são comentadas para explicar o que 
-  cada regra faz.
+/*
+  Este arquivo contém estilos responsivos que não estão 
+  cobertos pelos arquivos de componentes individuais.
 */
 
-/* ============================================
-   Telas Médias (Tablets) - max-width: 1024px
-   ============================================ */
-@media (max-width: 1024px) {
-
-    /* --- Geral --- */
-    /* Reduz o tamanho da fonte base para telas menores */
-    html {
-        font-size: 90%;
-    }
-
-    /* --- Cabeçalho (Header) --- */
-    /* 
-      Aumenta a largura do cabeçalho e reduz o espaçamento
-      para se ajustar melhor em telas de tablet.
-    */
-    .header {
-        width: calc(100% - 80px); /* Ocupa mais espaço horizontal */
-        top: 40px;
-        padding: 10px 15px;
-    }
-
-    /* Reduz o espaçamento entre os itens da navegação */
-    .nav-center ul {
-        gap: 2rem;
-    }
-    .nav-right ul {
-        gap: 2.5rem;
-    }
-
-
-    /* --- Seção de Grid de Produtos --- */
-    /*
-      Reorganiza o grid para um layout de 2 colunas,
-      empilhando os itens de forma mais vertical.
-    */
-    .grid-section {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-        grid-template-rows: repeat(4, 300px); /* Mais linhas para acomodar os itens */
-        grid-template-areas:
-            "highLight highLight"
-            "highLight highLight"
-            "sneaker-purple model"
-            "sneaker-white sneaker-color";
-            /* O item sneaker-silver será escondido neste breakpoint para simplificar o layout */
-    }
-
-    .sneaker-silver {
-        display: none;
-    }
-}
-
-
-/* ============================================
-   Telas Pequenas (Celulares) - max-width: 768px
-   ============================================ */
-@media (max-width: 768px) {
-
-    /* --- Cabeçalho (Header) --- */
-    /*
-      Simplifica o cabeçalho escondendo o menu de navegação principal.
-      Em um projeto real, isso seria substituído por um menu "hambúrguer".
-    */
-    .nav-center {
-        display: none; /* Esconde a navegação central */
-    }
-
-    .header {
-        top: 20px;
-        width: calc(100% - 40px); /* Quase 100% da largura */
-        flex-direction: row; /* Mantém o logo e os ícones na mesma linha */
-        justify-content: space-between;
-    }
-
-    .nav-right ul {
-        gap: 1.5rem; /* Menor espaçamento entre os ícones */
-    }
-
-    /* --- Seção Hero --- */
-    /* Ajusta o texto e botões para telas pequenas */
+/* Hero Section - Imagem para telas pequenas */
+@media screen and (max-width: 425px) {
     .hero-section {
-        padding-top: 150px;
-        background-position: center;
-    }
-    .hero-title {
-        font-size: 2.5rem; /* Reduz o tamanho do título */
-    }
-
-    /* --- Seção de Categorias --- */
-    /*
-      Faz com que os cards de categoria ocupem a largura total
-      e sejam exibidos em uma única coluna.
-    */
-    .category-card {
-        width: 100%; /* Ocupa toda a largura disponível */
-        height: 300px; /* Altura menor para se adaptar à tela */
-    }
-
-    /* --- Seção de Grid de Produtos --- */
-    /*
-      Transforma o grid em uma única coluna, empilhando todos
-      os produtos verticalmente.
-    */
-    .grid-section {
-        grid-template-columns: 1fr; /* Uma única coluna */
-        grid-template-rows: repeat(6, 300px); /* Linhas para cada item */
-        grid-template-areas:
-            "highLight"
-            "highLight"
-            "sneaker-purple"
-            "model"
-            "sneaker-color"
-            "sneaker-white";
+        /* Substitui a imagem do hero para dispositivos móveis */
+        background-image: url("../imagens/hero-mobile.jpg");
+        background-position: center; /* Garante que a imagem esteja centralizada */
     }
 }
 
 
-/* ============================================
-   Telas Muito Pequenas - max-width: 480px
-   ============================================ */
-@media (max-width: 480px) {
-
-    /* --- Geral --- */
-    /* Reduz ainda mais a fonte para melhor legibilidade */
-    html {
-        font-size: 80%;
+/* Footer Section - Empilhamento em telas menores */
+@media screen and (max-width: 900px) { /* Ajustando breakpoint para uma melhor transição */
+    .site-footer .footer-content {
+        flex-direction: column-reverse; /* Inverte a ordem para o form ir para baixo */
+        gap: 40px;
+        align-items: center; 
     }
 
-    /* --- Cabeçalho (Header) --- */
-    .header {
-        padding: 8px 10px;
-    }
-    .logo img {
-        height: 38px; /* Logo um pouco menor */
-    }
-    .nav-right img {
-        height: 35px; /* Ícones menores */
-        width: 35px;
-    }
-    .nav-right ul {
-        gap: 1rem;
+    .site-footer .footer-nav ul {
+        /* 
+          O footer-nav já é um UL que contém LIs com ULs aninhados.
+          A estrutura do HTML é uma única lista principal.
+          Para empilhar as colunas, precisamos mudar o layout do .footer-nav ul.
+        */
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Cria duas colunas em telas médias */
+        gap: 30px;
+        width: 100%;
+        text-align: center;
     }
 
-
-    /* --- Seção Hero --- */
-    .hero-title {
-        font-size: 2rem; /* Título ainda menor */
-        line-height: 1.2;
+    .footer-content .footer-right {
+        align-items: center;
+        text-align: center;
     }
-    .hero-buttons {
-        flex-direction: column; /* Botões empilhados */
-        gap: 1rem;
+
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-footer .footer-nav ul {
+        grid-template-columns: 1fr; /* Uma coluna em telas bem pequenas */
+    }
+
+    .site-footer .footer-copy {
+        text-align: center; 
     }
 }

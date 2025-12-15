@@ -95,7 +95,6 @@
     color: #ffffff;
     font-size: 1.7rem;
     font-weight: 400;
-    line-height: 400px;
 }
 
 .cta-group{
@@ -112,8 +111,9 @@
     .grid-section{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, auto);
-        grid-template-areas: "highlight highlight" "sneaker-white sneaker-white" "modelo sneaker-color"
-        "modelo sneaker-silver"
+        grid-template-areas: "highLight highLight sneaker-white sneaker-white"
+        "model sneaker-color" 
+        "model sneaker-silver"
         "sneaker-purple sneaker-purple";
         width: 100%;
         gap: 0.625rem;
